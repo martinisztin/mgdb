@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "moment": "^2.29.4"
+  },
+  "name": "mgdbot",
+  "version": "1.0.0",
+  "description": "Discord bot made for MGD server",
+  "main": "main.js",
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Isztin",
+  "license": "ISC"
+}
