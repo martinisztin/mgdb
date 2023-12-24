@@ -49,7 +49,7 @@ module.exports = {
             console.log(user.user);
 
             if(warnings[user.user.id].warns == 4) {
-                const role = interaction.guild.roles.cache.find(r => r.id = FIGY_ROLE);
+                const role = interaction.guild.roles.cache.find(r => r.id == FIGY_ROLE);
                 await user.roles.add(role);
             }
 

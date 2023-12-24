@@ -31,10 +31,10 @@ module.exports = {
         }
 
         // Add roles
-        const tagRole = interaction.guild.roles.cache.find(r => r.id = TAG_ROLE);
+        const tagRole = interaction.guild.roles.cache.find(r => r.id == TAG_ROLE);
         await user.roles.add(tagRole);
 
-        const mRole = interaction.guild.roles.cache.find(r => r.id = MEGEROSITETT_ROLE);
+        const mRole = interaction.guild.roles.cache.find(r => r.id == MEGEROSITETT_ROLE);
         await user.roles.add(mRole);
 
         // Change nickname
@@ -42,7 +42,7 @@ module.exports = {
 
         // Remove guest if they have it
         if (user.roles.cache.some(role => role.id === VENDEG_ROLE)) {
-            user.roles.remove(interaction.guild.roles.cache.find(r => r.id = VENDEG_ROLE));
+            user.roles.remove(interaction.guild.roles.cache.find(r => r.id == VENDEG_ROLE));
         }
 
         vEmbed.setDescription(`**${user.user.username}** megerősítése sikeresen megtörtént.`);
